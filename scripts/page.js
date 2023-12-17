@@ -142,7 +142,7 @@ function alwaysRunning(){
         document.getElementById("pageThree").style.display = "block";
         document.getElementById("pageTwo").style.display = "none";
         rememberHeaderLeft = '50%';
-        rememberHeaderText = "Hit that right wall -->";
+        rememberHeaderText = "Hit the right wall -->";
         document.getElementById("header").innerHTML = rememberHeaderText;
         document.getElementById("header").style.left = rememberHeaderLeft;
         thirdPage();
@@ -271,7 +271,7 @@ function firstPage(){
         document.getElementById("courtesy").style.opacity = cOpacity;
       }, 10);
     }
-  }, 4000);
+  }, 3000);
   setTimeout(() => {
     if(hOpacity<1){
       setInterval(() => {
@@ -289,6 +289,7 @@ function firstPage(){
     }
   }, 200);
 }
+
 function transitionscreen(){
   rightCount = 1;
   leftCount = 1;
@@ -416,6 +417,8 @@ function secondPage(){
 
 function thirdPage(){
   let count =1;
+  let POpacity = 0;
+  let P2Opacity = 0;
   seenMe = 1;
   document.getElementById("pageThree").style.display = "block";
   document.getElementById("header").style.color = "white"; 
@@ -437,6 +440,29 @@ function thirdPage(){
   setTimeout(()=>{
     setInterval(()=>{
       var getLeft = parseInt(myNFT.css("left"));
+      // if car gets to a caertain postion, fade into the project Reason and projreason2 header
+      if(getLeft >= -900){
+        // is the opcaity is not full, increment 150ms .002 opacity until it is full opcaity
+        setTimeout(() => {
+          if(POpacity < 1){
+            setInterval(() => {
+              POpacity += .002;
+              document.getElementById("ProjReason").style.opacity = POpacity;
+            }, 150);
+          }
+        }, 10);
+      }
+      if(getLeft >= 0){
+        setTimeout(() => {
+          if(P2Opacity < 1){
+            setInterval(() => {
+              P2Opacity += .003;
+              document.getElementById("ProjReason2").style.opacity = P2Opacity;
+            }, 150);
+          }
+        }, 750);
+      }
+      // if we the car position is at the right wall drop the car through a gap
       if(getLeft >= 1124){
         allowHorizMove = 0;
         document.getElementById("whiteLine").style.width = "87%";
