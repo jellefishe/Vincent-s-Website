@@ -17,3 +17,4 @@ B. education
   2. UIUC
   3. UM
 C. fin Slide
+  1. contact info
