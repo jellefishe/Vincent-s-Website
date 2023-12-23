@@ -370,27 +370,35 @@ button {
 #ProjReason{
   opacity: 0;
   position: absolute;
-  text-align:center;
   font-size: 40px;
   color: white;
   font-weight: normal;
+  left: 17.5%;
   top: 43%;
-  left: 18%;
   z-index: 3;
 }
 
 #ProjReason2{
   opacity: 0;
   position: absolute;
-  text-align:center;
   font-size: 40px;
   color: white;
   font-weight: normal;
+  left: 25%;
   top: 55%;
-  left: 8%;
   z-index: 3;
 }
 
+#ProjReason3{
+  opacity: 0;
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  font-weight: normal;
+  left: 8%;
+  top: 67%;
+  z-index: 3;
+}
 #blueBox{
   position: absolute;
   left:0%;
