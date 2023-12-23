@@ -609,6 +609,24 @@ button {
   font-size: 42px;
   color: white;
 }
+#moreaboutme{
+  position: absolute;
+  width: 0%;
+  height: 33%;
+  left: 50%;
+  opacity: 0;
+  top: 24%;
+  z-index: 8;
+  text-align: center;
+  font-size: 42px;
+  color: white;
+}
+/* Additional CSS for centering text horizontally */
+#moreaboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #bblueBox{
   position: absolute;
   left:0%;
