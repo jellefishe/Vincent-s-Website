@@ -515,7 +515,8 @@ function fourthPage(){
 function fourthPageSecondHalf(){
   let upForce = 10;
   document.getElementById("header").innerHTML = "Space to Boost";
-  document.getElementById("header").style.left = "42%";
+  document.getElementById("header").style.left = "39%";
+  document.getElementById("moreaboutme").style.opacity = 1;
   let wheelsLocation = 0;
   document.getElementById("myNFT").style.top = maxPersonPosY-6;
   document.getElementById("myNFT").src = "src/myNFT/aNFTState0.png";
