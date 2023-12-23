@@ -141,7 +141,7 @@ function alwaysRunning(){
       else if(pageState == 3){
         document.getElementById("pageThree").style.display = "block";
         document.getElementById("pageTwo").style.display = "none";
-        rememberHeaderLeft = '50%';
+        rememberHeaderLeft = '30%';
         rememberHeaderText = "Hit the right wall -->";
         document.getElementById("header").innerHTML = rememberHeaderText;
         document.getElementById("header").style.left = rememberHeaderLeft;
@@ -419,6 +419,7 @@ function thirdPage(){
   let count =1;
   let POpacity = 0;
   let P2Opacity = 0;
+  let P3Opacity = 0;
   seenMe = 1;
   document.getElementById("pageThree").style.display = "block";
   document.getElementById("header").style.color = "white"; 
@@ -461,6 +462,14 @@ function thirdPage(){
             }, 150);
           }
         }, 750);
+        setTimeout(() => {
+          if(P3Opacity < 1){
+            setInterval(() => {
+              P3Opacity += .003;
+              document.getElementById("ProjReason3").style.opacity = P3Opacity;
+            }, 150);
+          }
+        }, 1400);
       }
       // if we the car position is at the right wall drop the car through a gap
       if(getLeft >= 1124){
