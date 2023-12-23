@@ -456,7 +456,7 @@ function thirdPage(){
         setTimeout(() => {
           if(P2Opacity < 1){
             setInterval(() => {
-              P2Opacity += .003;SS
+              P2Opacity += .003;
               document.getElementById("ProjReason2").style.opacity = P2Opacity;
             }, 150);
           }
