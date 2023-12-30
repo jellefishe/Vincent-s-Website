@@ -15,8 +15,9 @@ A. projects section highlighting
   3. Vigor workout buddy app
   4. Computer Vision ball and head tracking
 B. education
-  1. IA
-  2. UIUC
-  3. UM
+  1. Troy, MI
+  2. IA
+  3. UIUC
+  4. UM
 C. fin Slide
   1. contact info
