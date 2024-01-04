@@ -8,7 +8,7 @@ This personal project is to learn and build a vanilla JS HTML/CSS website.
 need to add:
 audio
 
-X.intro slide before everything
+X.intro slide before everything, window scaleable 
 A. projects section highlighting 
   1. embedded systems turtle light and feed controller
   2. Bit Race NFT + Maniak Aliens NFT
