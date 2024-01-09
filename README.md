@@ -10,9 +10,9 @@ audio
 
 X.intro slide before everything, window scaleable 
 A. projects section highlighting 
-  1. embedded systems turtle light and feed controller
+  1. Embedded systems turtle light and feed controller
   2. Bit Race NFT + Maniak Aliens NFT
-  3. Vigor workout buddy app, for umich students
+  3. Vigor workout buddy app, for UMich students
   4. Computer Vision ball and head tracking
 B. education
   1. Troy, MI
